@@ -1,0 +1,142 @@
+ /* Page fade-in animation */
+ body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    animation: pageFadeIn 1s ease-in-out;
+}
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Main container styles */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Profile image styling with hover effect */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* Fade-in animation for profile image */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Heading and paragraph animations */
+h1, p {
+    opacity: 0;
+    animation: slideIn 1.5s ease-out forwards;
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Social media icons styling */
+.social-links {
+    margin-top: 20px;
+}
+.social-links a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.social-links a:hover {
+    transform: translateY(-5px);
+    color: #007bff;
+}
+
+/* Project button styling with hover and animation */
+.project-btn {
+    margin-top: 40px;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease-in-out;
+    animation: bounceIn 1.2s ease-in-out;
+}
+.project-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Bounce-in animation for project button */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.container
+{
+    background-color: #f4f4f4;
+}
+/* Welcome message styling with animation */
+.welcome {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 0px;
+    opacity: 0;
+    animation: welcomeFadeIn 1.5s ease-in-out forwards;
+}
+@keyframes welcomeFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

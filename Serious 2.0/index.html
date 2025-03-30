@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar with Icons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+   <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+        .sidebar {
+            height: 100vh;
+            width: justify;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #555;
+        }
+        .sidebar i {
+            font-size: 24px;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div class="sidebar">
+        <a href="home.html"><i class="fas fa-home">  </i></a>
+        <a href="contact.html"><i class="fas fa-user"></i></a>
+        <a href="hire.html"><i class="fas fa-envelope"></i></a>
+        <a href="setting.html"><i class="fas fa-cog"></i></a>
+    </div>
+    <div class="container">
+        <img src="IMG_20230807_125531.jpg" alt="Sovan Rajbanshi" class="profile-img">
+        <h1>Sovan Rajbanshi</h1>
+        <p>Machine Learning Enthusiast | Web Developer | C++ Programmer</p>
+        <div class="social-links">
+            <a href="https://github.com/SovanAI"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sovan-rajbanshi-57004b250/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/home"><i class="fab fa-twitter"></i></a>
+        </div>
+      <a href="project.html"><button class="project-btn">View My Projects</button></a>  
+    </div>    
+</body>
+</html>

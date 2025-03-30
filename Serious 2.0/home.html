@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovan Rajbanshi - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .skills {
+            margin-top: 20px;
+            text-align: left;
+            padding: 0 20px;
+        }
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills li {
+            background: #e0e0e0;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .skill-bar {
+            width: 100%;
+            background: #ddd;
+            border-radius: 5px;
+            margin: 5px 0;
+            overflow: hidden;
+        }
+        .skill-bar div {
+            height: 10px;
+            background: #4caf50;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #4caf50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="jpeg-optimizer_jpeg-optimizer_pic_11zon_page-0001.jpg" alt="Sovan Rajbanshi" class="profile-img">
+        <h1>Welcome to My Homepage</h1>
+        <p><strong>Name:</strong> Sovan Rajbanshi</p>
+        <p><strong>Education:</strong> B.Tech in Artificial Intelligence (AI)</p>
+        <p><strong>College:</strong> AGEMC (ALIPURDUAR GOVERRNMENT ENGINEERING AND MANAGEMENT COLLEGE)</p>
+        <p><strong>University:</strong> MAKAUT (MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY)</p>
+       
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Machine Learning <div class="skill-bar"><div style="width: 78%;"></div></div></li>
+                <li>HTML, CSS, JavaScript <div class="skill-bar"><div style="width: 90%;"></div></div></li>
+                <li>C++, C, Java, Python <div class="skill-bar"><div style="width: 80%;"></div></div></li>
+                <li>Problem Solving <div class="skill-bar"><div style="width: 75%;"></div></div></li>
+            </ul>
+        </div>
+        <a href="index.html" class="button" >Back</a>
+        <a href="#" class="button">Learn More</a>
+      
+    </div>
+</body>
+</html>
